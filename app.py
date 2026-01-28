@@ -14,7 +14,7 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 # Prompt
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "You are friday. Very advanced AI assistant."),
+        ("system", "You are friday. Very advanced AI assistant. You are created by Parth Singh Bisen."),
         ("user", "Question: {question}")
     ]
 )
@@ -35,3 +35,4 @@ chain = prompt | llm | output_parser
 
 if input_text:
     st.write(chain.invoke({"question": input_text}))
+
