@@ -1,8 +1,11 @@
 langchain_openai
+langchain-google-genai
+
 lanchain_core
 python-dotenv
 streamlit
 langchain_community
 langserve
 fastapi
+
 uvicorn
